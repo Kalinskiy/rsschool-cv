@@ -19,7 +19,8 @@
 - HTML
 - Material UI
 - CSS/SCSS/SASS
-
+- Formik
+- Hooks
 
 ## About
 I am Ukrainian front-end and React developer focused on clean and qualitative code.
