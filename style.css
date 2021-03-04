@@ -23,7 +23,9 @@ main {
     padding: 10px 20px;
     background-color: rgb(219, 219, 219);
     margin: 30px 15px;
-
+}
+.center {
+    text-align: center;
 }
 
 .photoBlock img {
@@ -50,7 +52,6 @@ main {
 .about {
     margin: 0 0 15px 0;
     display: block;;
-
 }
 
 hr {
