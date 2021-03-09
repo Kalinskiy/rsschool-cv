@@ -58,14 +58,33 @@
             </article>
             <hr/>
             <div>
+                <h3 class="contentTitle">Code example</h3>
+                <pre>
+
+ export const getPacksAllTC = (pageCount = 9, page = 0, name?: string): ThunkActionType => async (dispatch:any) => {
+ dispatch(changePreloaderTrigger(true))
+ try {
+    const data = await packsAPI.getPacksAll(pageCount, page, name)
+    dispatch(savePack(data.cardPacks))
+    dispatch(setTotalPacks(data.cardPacksTotalCount))
+    dispatch(getPackPage(data.page))
+    dispatch(setIsMyPacks(false))
+    dispatch(setIsMyCards(false))
+    } catch (error) {
+        console.log(error)
+    }
+    dispatch(changePreloaderTrigger(false))
+}
+
+              </pre>
+            </div>
+            <div>
                 <h3 class="contentTitle">Contacts</h3>
                 <ul>
                     <li>Telegramm: <a href="http://t.me/kalinskiyqq">@kalinskiyqq</a></li>
                     <li>Email: kalinskiy.sasha@gmail.com</li>
                     <li>Phone: +38 050 810 80 19</li>
                 </ul>
-
-
             </div>
         </section>
     </div>
